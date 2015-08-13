@@ -24,8 +24,9 @@ env/bin/python app.py
 ### Run production server
 ```bash
 env/bin/uwsgi --http :8000 --wsgi-file app.py
+```
 
-## Install httpie
+### Install httpie
 ```bash
 brew install httpie
 ```
@@ -44,5 +45,5 @@ curl localhost:8000/images/20cb8df6412111e5a0f80242ac11000c.jpeg > image.jpeg
 
 ## Deploy
 
-[Absolute README link](https://github.com/escrichov/images/blob/master/docker/README.md)
+[Docker deployment](https://github.com/escrichov/images/blob/master/docker/README.md)
 
