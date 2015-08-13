@@ -20,6 +20,7 @@ env/bin/nosetests
 ### Run test server
 ```bash
 env/bin/python app.py
+```
 
 ### Run production server
 ```bash
@@ -46,4 +47,3 @@ curl localhost:8000/images/20cb8df6412111e5a0f80242ac11000c.jpeg > image.jpeg
 ## Deploy
 
 [Docker deployment](https://github.com/escrichov/images/blob/master/docker/README.md)
-
