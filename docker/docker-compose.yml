@@ -1,0 +1,12 @@
+nginx:
+  ports:
+    - "80:80"
+    - "443:443"
+  links:
+    - app_server:app_server
+  build: ./docker-nginx
+
+app_server:
+  ports:
+    - "8000:8000"
+  build: ./docker-app-server

@@ -25,7 +25,7 @@ RUN git clone https://github.com/escrichov/images.git /images
 RUN pip install -r /images/requirements.txt
 
 # Expose ports
-EXPOSE 80
+EXPOSE 8000
 
 # Set the default directory where CMD will execute
 WORKDIR /images
@@ -33,4 +33,4 @@ WORKDIR /images
 # Set the default command to execute    
 # when creating a new container
 # i.e. using CherryPy to serve the application
-CMD uwsgi --http :80 --wsgi-file app.py
+CMD uwsgi --http :8000 --wsgi-file app.py
