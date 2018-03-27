@@ -1,4 +1,6 @@
-# images
+# Manage Images
+
+Upload images to the server and download them.
 
 ## Develop
 
